@@ -1,0 +1,19 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Post</title>
+</head>
+<body>
+    <div id="post-container" class="max-w-[600px] mx-auto border-2 border-black m-10 p-3 flex flex-col gap-4">
+        <h2 class="text-xl py-5 font-bold">Post Something</h2>
+        <textarea class="border-2 p-2 border-black" id="post-input" placeholder="Create your post..."></textarea>
+        <button class="btn btn-wide mx-auto bg-green-500 text-white hover:text-green-800" onclick="submitPost()">Post</button>
+        <div id="posts"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
